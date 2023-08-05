@@ -1,6 +1,7 @@
 import React from 'react';
 import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
 import { Layout, Menu, theme } from 'antd';
+import {ApexChart} from '../components/piechart'
 import Welcome from './welcome';
 const { Header, Content,  Sider } = Layout;
 
@@ -29,7 +30,7 @@ const Nav = () => {
             (icon, index) => ({
               key: String(index + 1),
               icon: React.createElement(icon),
-              label: `nav ${index + 1}`,
+              label: `Home`,
             }),
           )}
         />
@@ -55,6 +56,11 @@ const Nav = () => {
           >
 
            <Welcome/>
+          </div>
+          <div class="piechart-outer-container">
+                    <h3>My Expenses</h3>
+
+                    <ApexChart />
           </div>
         </Content>
       

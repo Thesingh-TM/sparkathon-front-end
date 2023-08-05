@@ -13,10 +13,7 @@ class ApexLineChart extends React.Component {
         }, {
           name: 'Revenue',
           data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
-        }, {
-          name: 'Free Cash Flow',
-          data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
-        }],
+        },],
         options: {
           chart: {
             type: 'bar',

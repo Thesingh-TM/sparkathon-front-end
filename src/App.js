@@ -4,9 +4,12 @@ import {BrowserRouter , Route , Routes } from 'react-router-dom'
 import Login from './pages/login'; 
 import Register from './pages/register';
 import Dashboard from './pages/dashboard';
-import addExpense from './pages/add-Expense';
+import AddExpense from './pages/add-Expense';
+import { useNavigate } from "react-router-dom";
+
 
 function App() {
+  
   return (
     <div className="App">
       <BrowserRouter>
@@ -19,7 +22,9 @@ function App() {
                 {/* <Route path="/product/:pid" element={< ProductScreen />} > </Route> */}
                 <Route path ="/login" element ={ <Login /> } ></Route>
                 <Route path ="/register" element ={ <Register /> } ></Route>
-                <Route path='/account' element={ < addExpense /> } ></Route>
+               
+                <Route path="/addExpense" element={ < AddExpense /> } ></Route>
+               
               </Routes>
               
             </main>
