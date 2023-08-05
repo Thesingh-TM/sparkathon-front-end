@@ -2,7 +2,9 @@ import { useNavigate } from "react-router-dom";
 import { useState  } from "react"
 import axios from "axios";
 import Navbar from "../components/navbar";
-
+import {ApexChart} from '../components/piechart'
+import {ApexLineChart} from '../components/linechart'
+ 
 
 
 function Dashboard() {
@@ -49,12 +51,24 @@ function Dashboard() {
     return(
         
        
-            
-            <Navbar/>
-            
-          
-        
-        
+            <div class= "main-container">
+                <div>
+                <Navbar/>
+                </div>
+                
+                <div class="piechart-outer-container">
+                    <h3>My Expenses</h3>
+
+                    <ApexChart />
+                </div>
+
+                <div class="linechart-outer-container">
+                    <ApexLineChart />
+                </div>
+                
+                
+            </div>
+    
     )
 }
 

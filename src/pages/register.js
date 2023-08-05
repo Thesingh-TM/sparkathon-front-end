@@ -2,8 +2,6 @@ import { useNavigate } from "react-router-dom";
 import { useState  } from "react"
 import axios from "axios";
 
-
-
 function Register() {
 
     const navigate = useNavigate();
@@ -16,50 +14,40 @@ function Register() {
     
   
 
-    // async function submit(e){
-    //     e.preventDefault()
-
-    //     try{
-    //         await axios.post("http://localhost:5000/register",{
-    //         name,    
-    //         email,
-    //         username,
-    //         password
-    //         })
-    //         .then(res => {
-    //             if(res.data==="exist"){
-    //                 alert("User already exist")
-                    
-
-    //             }
-    //             else if(res.data==="Not exist") {
-    //                 navigate("/" )
-    //             }
-    //         }).catch(e=>{
-    //             alert("Wrong details")
-    //             console.log(e)
-    //         })
-    //     }
-    //     catch(e){
-    //         console.log(e)
-    //     }
-    // }
 
     return(
-        <div className="Login-container">
-            <h1>New user registration page</h1>
-            <form action="POST">
-
-                <input type="text" placeholder="Enter Name.."  className="login-input"  onChange={(e) => {setName(e.target.value)}}/>
-                <input type="email" placeholder="Enter Email.."  className="login-input" onChange={(e) => {setEmail(e.target.value)}}/>
-                <input type="text" placeholder="Enter Username.."  className="login-input" onChange={(e) => {setUsername(e.target.value)}}/>
-                <input type="password" placeholder="Enter Password.."  className="login-input" onChange={(e) => {setPassword(e.target.value)}}/>
-                <button className="login-submit-button" >Submit</button>
-
-            </form>
-            <button onClick={() => navigate("/")} className="login-home-button">Home</button>
+        <div className="login-container">
+        <div className="image-section">
+       
+          <img src="images/pic.png" alt="Login Image" />
         </div>
-        
+        <div className="login-section">
+          <form className="form-container">
+            <img src="images/logo.png" />
+            <p className="signin">Register</p>
+            <label htmlFor="name">Name</label>
+            <input type="text" id="name" name="name" required="" />
+            <label htmlFor="email">Email Id</label>
+            <input type="email" id="email" name="email" required="" />
+            <label htmlFor="password">Password</label>
+            <input type="password" id="password" name="password" required="" />
+            <label htmlFor="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required=""
+            />
+            
+       
+            <div className="btn-groupone">
+              <button type="submit" className="register-btn">
+                Sign Up
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     )
 }
 

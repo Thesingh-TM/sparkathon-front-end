@@ -1,6 +1,6 @@
 import { useState} from 'react'
 import { useNavigate  , Link } from "react-router-dom";
-
+// import img from "../images/pic.png"
 import axios from 'axios';
 import { useCookies } from "react-cookie";
 
@@ -15,68 +15,42 @@ function Login() {
     const [password,setPassword] = useState('')
     const [cookies, setCookies] = useCookies('');
     
-    
-    // async function submit(e){
-    //     e.preventDefault()
-
-    //     try{
-    //         await axios.post("http://localhost:5000/login",{
-    //             email,
-    //             password
-    //         })
-    //         .then(res => {
-    //             if(res.data[0]==="exist"){
-    //                 navigate("/" )
-    //                 console.log("inside then")
-                    
-    //                console.log(res.data[1])
-    //                const token = res.data[1].token
-    //                const updateCookie = JSON.stringify({ 
-    //                 email:email,
-    //                 token:token
-    //                })
-                   
-
-    //             setCookies("Email",updateCookie);
-
-    //             }
-    //             else if(res.data==="Invalid Credentials") {
-    //                 alert(res.data)
-    //             }
-    //         }).catch(e=>{
-    //             alert("Wrong details")
-    //             console.log(e)
-    //         })
-    //     }
-    //     catch(e){
-    //         console.log(e)
-    //     }
-       
-    // }
+   
 
         return(
-            <div className="Login-container">
-                <h1>This is login page</h1>
-                <form action="POST">
-                    <input type="text" placeholder="Enter Email" className="login-input" onChange={(e) => {setEmail(e.target.value)}}/>
-                    <input type="password" placeholder="Enter Password" className="login-input" onChange={(e) => {setPassword(e.target.value)
-                    // setCookies('Email', email, { path: '/' })
-                    // setCookies('Password', password , { path: '/' })
-                    }}/>
-                    <button className="login-submit-button" >Submit</button>
-                </form>
-                <button onClick={() => {navigate("/");}} className="login-home-button">Home</button>
 
-                <br/>
-                <br/>
-
-                <p>OR</p>
-
-                <br/><br/>
-                <Link to="/register" >Register</Link>
-
-
+            <div class="login-container">
+                <div class="image-section">
+                   
+                    <img src="images/pic.png" alt="Login Image"/>
+                </div>
+                <div class="login-section">
+                    
+                    <form class="form-container">
+                        <img src="images/logo.png"/>
+                        <p class="signin">Sign in</p>
+                        <p class="signinmssg">Welcome please enter your details</p>
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required/>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required/>
+                        <div class="btn-group">
+                            <button type="submit" class="login-btn">Log In</button>
+                        </div>
+                        <p class="or">OR</p>
+                        <div class="btn-groupone">
+                            <button type="submit" class="register-btn">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
             </div>
+
+            
+            
+
+
+
+
         )
 
 }

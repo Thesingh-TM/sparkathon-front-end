@@ -3,18 +3,24 @@ import { Card } from 'antd';
 const Welcome = () => (
    
   <Card
-    title="Card title"
+    
     bordered={false}
     style={{
-      width: 300,
-    }}
+      width: '100%',
+      height:'20%',
+      background:'#1B5676',
+      color:'white'
+
+    }
+  }
   >
     
         <div>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-            <h1>Content box</h1>
+          <div>
+            <h2 class="welcome-text">Welcome back !</h2>
+            <p class="welcome-text">Made some purchases ? Add your expenses for easy tracking</p>
+            <button>Add Expense</button>
+          </div>
         </div>
     
    

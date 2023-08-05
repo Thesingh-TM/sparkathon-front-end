@@ -11,3 +11,337 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#chart {
+  width:70%;
+  height:70%;
+}
+
+.piechart-outer-container{
+  position: absolute;
+  width:35%;
+  left:13%;
+  top:70%;
+}
+
+.piechart-outer-container h3{
+  text-align: left;
+}
+
+.linechart-outer-container{
+  width:35%;
+  position: absolute;
+  left: 13%;
+  top: 95%;
+}
+
+.main-container{
+  position:relative;
+}
+
+#root{
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-section img{
+  object-fit: cover; 
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.login-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6FCFF
+}
+
+.login-section h1 {
+  margin-bottom: 20px;
+}
+.signin{
+  font-family: Plus Jakarta Sans;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 20px;
+
+
+}
+.signinmssg{
+font-family: Plus Jakarta Sans;
+font-size: 20px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color:#7E7E7F;
+
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+ 
+      background-color:#ffffff;
+      padding: 65px;
+      border-radius: 5px;
+      width: 400px;
+      border-radius: 5px;
+
+  
+}
+
+label {
+  margin-bottom: 5px;
+  color: rgb(130, 127, 127);
+}
+
+input {
+  padding: 13px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 380px;
+
+left: 24px;
+
+
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn-group {
+  color: #fff;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  width:340px;
+  height: 10px;
+
+  padding: 15px 34px 15px 34px;
+  background: #3563FF;
+
+  margin-bottom: 10px;
+
+
+
+}
+.btn-groupone{
+color: #fff;
+border: 1px solid #3563FF;
+border-radius: 5px;
+width:340px;
+height: 10px;
+padding: 15px 34px 15px 34px;
+
+}
+
+button{
+  border: none;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+}
+button:hover {
+  background-color: #0056b3; 
+}
+.login-btn{
+  color: #fff;
+  margin:0 auto;
+  margin-top: -6px;
+  background-color: transparent;
+  font-size: 20px;
+}
+.or{
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: rgb(130, 127, 127);
+
+}
+.register-btn {
+  background-color: transparent;
+  margin:0 auto;
+  
+  margin-top: -5px;
+  color:#3563FF;
+  font-size: 20px;
+  
+}
+/* 
+.register-btn:hover {
+  / background-color: #1f9234; /
+} */
+
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-section img{
+  object-fit: cover;
+  object-position: center;    
+  width: 100%;
+  height: 99%;
+
+}
+
+
+.login-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6FCFF
+}
+
+.login-section h1 {
+  margin-bottom: 20px;
+}
+.signin{
+  font-family: Plus Jakarta Sans;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+ 
+      background-color:#ffffff;
+      padding: 65px;
+      border-radius: 5px;
+      width: 400px;
+      border-radius: 5px;
+
+  
+}
+
+label {
+  margin-bottom: 5px;
+  color: rgb(130, 127, 127);
+}
+
+input {
+  padding: 13px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 380px;
+
+left: 24px;
+
+
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn-group {
+  color: #fff;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  width:340px;
+  height: 10px;
+
+  padding: 15px 34px 15px 34px;
+  background: #3563FF;
+
+  margin-bottom: 10px;
+
+
+
+}
+.btn-groupone{
+color: #fff;
+border: 1px solid #3563FF;
+border-radius: 5px;
+width:340px;
+height: 10px;
+padding: 15px 34px 15px 34px;
+
+}
+
+button{
+  border: none;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+}
+
+.login-btn{
+  color: #fff;
+  margin:0 auto;
+  margin-top: -6px;
+  background-color: transparent;
+  font-size: 20px;
+}
+.or{
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: rgb(130, 127, 127);
+
+}
+.register-btn {
+  background-color: transparent;
+  margin:0 auto;
+  
+  margin-top: -5px;
+  color:#3563FF;
+  font-size: 20px;
+  
+}
+
+.register-btn:hover {
+  background-color: #1f9234; 
+}

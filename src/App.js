@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <div >
           <header>
-          <h1 className="xtrahome">Xtrahome</h1>
+        
             <main>
               <Routes>
                 <Route path="/" element={<Dashboard />} ></Route>
